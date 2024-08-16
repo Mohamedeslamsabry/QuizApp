@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuizApp</title>
+    <!--   Animate Css   -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!--   Font Aswome   -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!--   Boatstrab   -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!--   style   -->
+    <link rel="stylesheet" href="css/stlyle.css" />
+  </head>
+  <body class="bg">
+    
+     <!-- ! start -->
+    <div class="quiz">
+      <div class="container mt-5 d-flex justify-content-center ">
+
+        <div class="heading animate__animated animate__zoomInDown">
+          <h1 class="mb-0">Quiz App</h1>
+        </div>
+
+      </div>
+    </div>
+
+
+     <!-- ! Chooise -->
+    <form  id="fromQuiz" class="animate__animated animate__zoomInRight">
+       <div class="container">
+        <div class="row d-flex w-75 m-auto mt-4 flex-column">
+          <div class="form-floating">
+            <select id="categoryMenu"   class="form-select  " aria-label="category Select">
+              <option selected value="" >Any Category</option>
+              <option value="21">Sports</option>
+              <option value="22">Geography</option>
+              <option value="23">History</option>
+              <option value="25">Art</option>
+                <option value="9">General Knowledge</option>
+                <option value="27">Animals</option>
+                <option value="19">Science: Mathematics</option>
+                <option value="18">Science: Computers</option>
+              
+            </select>
+            <label for="categoryMenu ">Choose Category</label>
+          </div>
+
+          <div class="form-floating my-4">
+            <select id="diffuclty" class="form-select " aria-label="Default select example">
+              <option  selected value="easy" >Easy</option>
+              <option value="medium">Medium</option>
+              <option value="hard" >Hard</option>
+            </select>
+            <label for="diffuclty ">Diffuclty Question Level</label>
+          </div>
+       
+          <div  class="form-floating  ">
+            <input  type="number" class="form-control " id="numberQuestion" placeholder="name@example.com">
+            <label for="numberQuestion">Number of Question</label>
+          </div>
+         
+          <button id="btn" class="btn btn-info my-4">Start</button>
+
+          <p id="required" class="alert alert-danger text-center d-none">All input is requaird</p>
+          <p id="numberrr" class="alert alert-info text-center d-none">max Question is 45</p>
+        
+        </div>
+       </div>
+    </form>
+
+
+    <!-- ! Question -->
+    <div id="question" class="question animate__animated animate__zoomInLeft d-none">
+      <div class="container">
+        <div id="rowData" class="row w-50 m-auto mt-4 brdr text-center">
+          
+          <div class="bg-white">
+            <div class="headQustion d-flex justify-content-between p-3">
+                <p id='categ'>  </p>
+                <span id='numerquestion'>  </span>
+            </div>
+            <h2 id="quest" class="h4"></h2>
+            <ul id="ques" class="d-flex flex-wrap ">
+               
+            </ul>
+            <h4 id="score">Score : 0 </h4>
+           </div>
+        </div>
+        
+      </div>
+    </div>
+
+
+
+
+
+   <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script  src="js/index.js"></script>
+  </body>
+</html>
